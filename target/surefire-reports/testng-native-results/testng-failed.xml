@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.example.SimplePublisherTest">
+        <methods>
+          <include name="optional_spec309_requestNegativeNumberMaySignalIllegalArgumentExceptionWithSpecificMessage"/>
+          <include name="required_createPublisher1MustProduceAStreamOfExactly1Element"/>
+          <include name="required_spec105_mustSignalOnCompleteWhenFiniteStreamTerminates"/>
+          <include name="required_spec109_mayRejectCallsToSubscribeIfPublisherIsUnableOrUnwillingToServeThemRejectionMustTriggerOnErrorAfterOnSubscribe"/>
+          <include name="required_spec107_mustNotEmitFurtherSignalsOnceOnCompleteHasBeenSignalled"/>
+          <include name="required_spec309_requestNegativeNumberMustSignalIllegalArgumentException"/>
+          <include name="optional_spec111_multicast_mustProduceTheSameElementsInTheSameSequenceToAllOfItsSubscribersWhenRequestingManyUpfrontAndCompleteAsExpected"/>
+          <include name="untested_spec106_mustConsiderSubscriptionCancelledAfterOnErrorOrOnCompleteHasBeenCalled"/>
+          <include name="required_spec109_mustIssueOnSubscribeForNonNullSubscriber"/>
+          <include name="setUp"/>
+          <include name="optional_spec111_multicast_mustProduceTheSameElementsInTheSameSequenceToAllOfItsSubscribersWhenRequestingManyUpfront"/>
+          <include name="optional_spec111_multicast_mustProduceTheSameElementsInTheSameSequenceToAllOfItsSubscribersWhenRequestingOneByOne"/>
+          <include name="untested_spec110_rejectASubscriptionRequestIfTheSameSubscriberSubscribesTwice"/>
+          <include name="required_spec313_cancelMustMakeThePublisherEventuallyDropAllReferencesToTheSubscriber"/>
+          <include name="optional_spec111_maySupportMultiSubscribe"/>
+          <include name="required_spec312_cancelMustMakeThePublisherToEventuallyStopSignaling"/>
+          <include name="required_spec307_afterSubscriptionIsCancelledAdditionalCancelationsMustBeNops"/>
+          <include name="required_spec317_mustSupportAPendingElementCountUpToLongMaxValue"/>
+          <include name="required_spec109_subscribeThrowNPEOnNullSubscriber"/>
+          <include name="untested_spec108_possiblyCanceledSubscriptionShouldNotReceiveOnErrorOrOnCompleteSignals"/>
+          <include name="optional_spec105_emptyStreamMustTerminateBySignallingOnComplete"/>
+          <include name="required_spec102_maySignalLessThanRequestedAndTerminateSubscription"/>
+          <include name="untested_spec107_mustNotEmitFurtherSignalsOnceOnErrorHasBeenSignalled"/>
+          <include name="untested_spec109_subscribeShouldNotThrowNonFatalThrowable"/>
+          <include name="required_spec317_mustSupportACumulativePendingElementCountUpToLongMaxValue"/>
+          <include name="untested_spec304_requestShouldNotPerformHeavyComputations"/>
+          <include name="optional_spec104_mustSignalOnErrorWhenFails"/>
+          <include name="required_spec306_afterSubscriptionIsCancelledRequestMustBeNops"/>
+          <include name="optional_spec111_registeredSubscribersMustReceiveOnNextOrOnCompleteSignals"/>
+          <include name="required_spec309_requestZeroMustSignalIllegalArgumentException"/>
+          <include name="stochastic_spec103_mustSignalOnMethodsSequentially"/>
+          <include name="required_createPublisher3MustProduceAStreamOfExactly3Elements"/>
+          <include name="untested_spec305_cancelMustNotSynchronouslyPerformHeavyComputation"/>
+          <include name="required_spec101_subscriptionRequestMustResultInTheCorrectNumberOfProducedElements"/>
+          <include name="required_spec317_mustNotSignalOnErrorWhenPendingAboveLongMaxValue"/>
+          <include name="required_spec303_mustNotAllowUnboundedRecursion"/>
+          <include name="required_spec302_mustAllowSynchronousRequestCallsFromOnNextAndOnSubscribe"/>
+        </methods>
+      </class> <!-- org.example.SimplePublisherTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

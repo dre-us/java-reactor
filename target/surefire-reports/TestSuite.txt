@@ -1,0 +1,85 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 39, Failures: 27, Errors: 0, Skipped: 9, Time elapsed: 1.417 s <<< FAILURE! - in TestSuite
+optional_spec105_emptyStreamMustTerminateBySignallingOnComplete(org.example.SimplePublisherTest)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+optional_spec111_maySupportMultiSubscribe(org.example.SimplePublisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+optional_spec111_multicast_mustProduceTheSameElementsInTheSameSequenceToAllOfItsSubscribersWhenRequestingManyUpfront(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+optional_spec111_multicast_mustProduceTheSameElementsInTheSameSequenceToAllOfItsSubscribersWhenRequestingManyUpfrontAndCompleteAsExpected(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+optional_spec111_multicast_mustProduceTheSameElementsInTheSameSequenceToAllOfItsSubscribersWhenRequestingOneByOne(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+optional_spec111_registeredSubscribersMustReceiveOnNextOrOnCompleteSignals(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+optional_spec309_requestNegativeNumberMaySignalIllegalArgumentExceptionWithSpecificMessage(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_createPublisher1MustProduceAStreamOfExactly1Element(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_createPublisher3MustProduceAStreamOfExactly3Elements(org.example.SimplePublisherTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec101_subscriptionRequestMustResultInTheCorrectNumberOfProducedElements(org.example.SimplePublisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec102_maySignalLessThanRequestedAndTerminateSubscription(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec105_mustSignalOnCompleteWhenFiniteStreamTerminates(org.example.SimplePublisherTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec107_mustNotEmitFurtherSignalsOnceOnCompleteHasBeenSignalled(org.example.SimplePublisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec109_mustIssueOnSubscribeForNonNullSubscriber(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec109_subscribeThrowNPEOnNullSubscriber(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec302_mustAllowSynchronousRequestCallsFromOnNextAndOnSubscribe(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec303_mustNotAllowUnboundedRecursion(org.example.SimplePublisherTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec306_afterSubscriptionIsCancelledRequestMustBeNops(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec307_afterSubscriptionIsCancelledAdditionalCancelationsMustBeNops(org.example.SimplePublisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec309_requestNegativeNumberMustSignalIllegalArgumentException(org.example.SimplePublisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec309_requestZeroMustSignalIllegalArgumentException(org.example.SimplePublisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec312_cancelMustMakeThePublisherToEventuallyStopSignaling(org.example.SimplePublisherTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec313_cancelMustMakeThePublisherEventuallyDropAllReferencesToTheSubscriber(org.example.SimplePublisherTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec317_mustNotSignalOnErrorWhenPendingAboveLongMaxValue(org.example.SimplePublisherTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec317_mustSupportACumulativePendingElementCountUpToLongMaxValue(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+required_spec317_mustSupportAPendingElementCountUpToLongMaxValue(org.example.SimplePublisherTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
+stochastic_spec103_mustSignalOnMethodsSequentially(org.example.SimplePublisherTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.NullPointerException: flowPublisher
+
