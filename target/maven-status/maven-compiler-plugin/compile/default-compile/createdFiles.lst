@@ -3,4 +3,6 @@ org\example\App.class
 org\example\Gender.class
 org\example\Empleado.class
 org\example\FunctionalInterface.class
+org\example\SimplePublisher.class
 org\example\Book.class
+org\example\App$1.class

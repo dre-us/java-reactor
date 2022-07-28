@@ -1,10 +1,10 @@
 package org.example;
 
 import java.util.Iterator;
-//import java.util.concurrent.Flow;
+import java.util.concurrent.Flow;
 import java.util.stream.IntStream;
 
-/*public class SimplePublisher implements Flow.Publisher<Integer> {
+public class SimplePublisher implements Flow.Publisher<Integer> {
     private final Iterator<Integer> iterator;
 
     SimplePublisher(int count) {
@@ -16,4 +16,4 @@ import java.util.stream.IntStream;
         iterator.forEachRemaining(subscriber::onNext);
         subscriber.onComplete();
     }
-}*/
+}

@@ -1,50 +1,35 @@
 package org.example;
 
-//import java.util.concurrent.Flow;
-
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.concurrent.Flow;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-import java.util.stream.DoubleStream;
-import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
-
-/**
- * Hello world!
- *
- */
 public class App 
 {
-    static int init = 0;
+    static int init = 1;
     static int fin = 5;
     public static void main( String[] args )
     {
-        /*new SimplePublisher(10).subscribe(new Flow.Subscriber<Integer>() {
-            @Override
-            public void onSubscribe(Flow.Subscription subscription) {
+//        sesionOne();
+//        sesionTwo();
+//        exercises();
+//        createObservable();
+//        createObservableJust();
+//        createObservableFromIterable();
+//        createObservableRange();
+//        createObservableInterval();
+//        createObservableDefer();
+//        multiCasting();
+        exercise();
+    }
 
-            }
-
-            @Override
-            public void onNext(Integer item) {
-                System.out.println("item = [" + item + "]");
-            }
-
-            @Override
-            public void onError(Throwable throwable) {
-
-            }
-
-            @Override
-            public void onComplete() {
-                System.out.println("complete");
-            }
-        });*/
+    public static void sesionOne() {
         FunctionalInterface myInterface = () -> System.out.println("Processing");
         myInterface.print("Hola");
         Function<Long, Long> adder = new AddThree();
@@ -142,11 +127,37 @@ public class App
         );// [// [1, 2],// [3, 4]// ]
 
         List<Integer> listaAplanada = listaBidimensional.stream()
-                        .flatMap( listaInterna -> listaInterna.stream())
-                        .collect(toList());
+                .flatMap( listaInterna -> listaInterna.stream())
+                .collect(toList());
 
         for (Integer n : listaAplanada) {System.out.println(n);}
+    }
 
+    public static void sesionTwo() {
+        new SimplePublisher(10).subscribe(new Flow.Subscriber<Integer>() {
+            @Override
+            public void onSubscribe(Flow.Subscription subscription) {
+
+            }
+
+            @Override
+            public void onNext(Integer item) {
+                System.out.println("item = [" + item + "]");
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+
+            }
+
+            @Override
+            public void onComplete() {
+                System.out.println("complete");
+            }
+        });
+    }
+
+    public static void exercises() {
         //ejercicio uno
         String name1 = "Andres Felipe Castro Malaver";
         String name2 = "Felipe Castro Malaver";
@@ -154,8 +165,8 @@ public class App
         names.add(name1);
         names.add(name2);
         List<String> ansf = names.stream()
-            .map(x -> x.split(" ")[0])
-            .map(x -> x.toUpperCase()).collect(toList());
+                .map(x -> x.split(" ")[0])
+                .map(x -> x.toUpperCase()).collect(toList());
         System.out.println(ansf.toString());
 
         //ejercicio dos
@@ -195,13 +206,6 @@ public class App
         Map<String, List<Empleado>> empGrp = empleados.stream()
                 .collect(Collectors.groupingBy(Empleado::getDepartamento, Collectors.toList()));
         System.out.println(empGrp.toString());
-        createObservable();
-        createObservableJust();
-        createObservableFromIterable();
-        createObservableRange();
-        createObservableInterval();
-        createObservableDefer();
-        multiCasting();
     }
 
     public static void createObservable() {
@@ -228,7 +232,6 @@ public class App
         Observable<String> source = Observable.fromIterable(items);
         source.subscribe(s -> System.out.println("Numbero recibido: " + s));
     }
-
 
     public static void createObservableRange() {
         Observable.range(1, 10)
@@ -267,5 +270,13 @@ public class App
                 .autoConnect(2);
         observable2.subscribe(s -> System.out.println("Sub 1 got: " + s));
         observable2.subscribe(s -> System.out.println("Sub 2 got: " + s));
+    }
+
+    public static void exercise() {
+        int[] arr1 = new int[]{1000, 2000, 3000};
+        int[] arr2 = new int[]{2000, 3000, 4000, 5000};
+        ArrayList<Integer> ventasD1 = new ArrayList<>(Arrays.asList(1000, 2000, 3000));
+        ArrayList<Integer> ventasKoaj = new ArrayList<>(Arrays.asList(2000, 3000, 4000, 5000));
+
     }
 }
